@@ -26,15 +26,17 @@ const Home = () => {
 
           <ul className="flex m-2 sm:w-4/5 md:w-1/2 lg:w-1/2 lg:text-md xl:w-2/5 mx-auto text-xs justify-center">
               <li className='m-2 w-1/2 ml-5 '>
-                  <a href="#" className="bg-blobPink hover:bg-zinc-200 transition duration-300 cursor-pointer rounded-xl flex items-center justify-center py-2 ">
-                    <Image className='ml-1 my-1  max-w-10 lg:mx-2 xl:mx-1' src="/img/apple.png" alt="Apple Logo Icon" width={200} height={200} />
-                      <span className="m-1 font-bold lg:mx-2 text-zinc-600 lg:text-lg ">App Store</span>
+                  <a href="#" className="group bg-blobPink hover:bg-zinc-200 transition duration-300 cursor-pointer rounded-xl flex items-center justify-center py-2 ">
+                    <Image className='opacity-100 group-hover:opacity-0 transition duration-300 ml-1 my-1  max-w-10 lg:mx-2 xl:mx-1' src="/img/apple.png" alt="Apple Logo Icon" width={200} height={200} />
+                    <span className="opacity-100 group-hover:opacity-0 transition duration-300 m-1 font-bold lg:mx-2 text-zinc-600 lg:text-lg ">App Store</span>
+                    <span className="opacity-0 group-hover:opacity-100 transition duration-300 m-1 font-bold lg:mx-2 text-zinc-600 lg:text-lg absolute">Coming Soon...</span>
                   </a>
               </li>
               <li className='m-2 w-1/2 mr-5'>
-                  <a href="#" className="bg-blobPink hover:bg-zinc-200 transition duration-300 cursor-pointer rounded-xl flex items-center justify-center py-2 ">
-                  <Image className='ml-1 max-w-10 my-1 lg:mx-2 xl:mx-1' src="/img/play.png" alt="Google Logo Icon" width={200} height={200} /> 
-                      <span className="m-1 font-bold lg:mx-2 text-zinc-600 lg:text-lg">Google Play</span>
+                  <a href="#" className="group bg-blobPink hover:bg-zinc-200 transition duration-300 cursor-pointer rounded-xl flex items-center justify-center py-2 ">
+                  <Image className='opacity-100 group-hover:opacity-0 transition duration-300 ml-1 max-w-10 my-1 lg:mx-2 xl:mx-1' src="/img/play.png" alt="Google Logo Icon" width={200} height={200} /> 
+                  <span className="opacity-100 group-hover:opacity-0 transition duration-300 m-1 font-bold lg:mx-2 text-zinc-600 lg:text-lg">Google Play</span>
+                  <span className="opacity-0 group-hover:opacity-100 transition duration-300 m-1 font-bold lg:mx-2 text-zinc-600 lg:text-lg absolute">Coming Soon...</span>
                   </a>
               </li>
           </ul>
